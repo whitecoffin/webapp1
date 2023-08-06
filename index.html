@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>画像結合 webアプリケーション</title>
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>画像結合</h1>
+    <hr>
+    <br>
+    <h3>結合したいファイルを選択してください</h3>
+    <br>
+    <div><h3>もしくはクリップボードからペースト</h3></div>
+    <hr>
+    <!--ファイル選択用タグ(非表示/実際に動作する側)-->
+    <input type="file" accept="image/*" multiple="multiple" style="display: none;" id="invisibleButton" onchange="previewImage(this);">
+    <!--ファイル選択用タグ(実際に表示される側)-->
+    <button type="button" class="selectFile" id="visibleButton">画像を選択</button>
+    <br>
+    <hr>
+    <!--プレビュー文字(最初は非表示)-->
+    <div id="previewTextDiv" hidden>
+      <h3>選択中の画像</h3><br>
+      <a>※削除ボタンクリックで削除できます</a>
+      <br>
+    </div>
+    <!--この子要素に画像が入っていく-->
+    <div id="preview" class="previewDiv"></div>
+    <br>
+    <hr>
+    <!--実行ボタン(最初は非表示)-->
+    <div id="runBtnDiv" hidden>
+      <button type="button" class="selectFile" id="runButton" onclick="GenerateNewImg();">実行</button>
+    </div>
+    <br>
+    <hr>
+    <!--結果の画像を表示するエリア(最初は非表示)-->
+    <div id="resultDiv" hidden>
+      <h2>右クリックで画像を保存してください</h2><br>
+      <img id="resultImg" class="resultImg">
+    </div>
+    <br>
+    <hr>
+  </body>
+  <script src="mainScript.js"></script>
+</html>
