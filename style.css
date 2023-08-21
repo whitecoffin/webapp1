@@ -51,10 +51,6 @@ h1:hover:after {
 	transform: translate(0, 0);
 }
 
-h2 {
-
-}
-
 button {
     -webkit-user-select: none;
     user-select: none;
@@ -140,4 +136,5 @@ div figure{
 
 .resultImg {
 	max-width: 80%;
+	max-height: 650px;
 }
