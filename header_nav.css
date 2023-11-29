@@ -1,0 +1,38 @@
+.header-colorChange {
+    background: #e2e2e2;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -15px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.header-nav-text {
+    font-size: 15px;
+    height: auto;
+    margin-left: 40px;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: .1em;
+}
+
+.logo-link {
+    width: 70px;
+    height: 20px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}

@@ -4,15 +4,26 @@
     <meta charset="utf-8">
     <title>画像結合 webアプリケーション</title>
     <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="header_nav.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>画像結合</h1>
-    <hr>
-    <br>
+    <!--ナビゲーションバー-->
+    <div class="header-colorChange">
+      <nav class="header-nav">
+        <a href="https://whitecoffin.github.io/officialsite/" class="header-nav-text logo-link">whitecoffin</a>
+        <a href="https://whitecoffin.github.io/officialsite/html/tools.html" class="header-nav-text">TOOLS</a>
+        <a href="https://whitecoffin.github.io/officialsite/html/works.html" class="header-nav-text">WORKS</a>
+        <a href="https://whitecoffin.github.io/officialsite/html/news.html" class="header-nav-text">NEWS</a>
+        <a href="https://whitecoffin.github.io/officialsite/html/sns.html" class="header-nav-text">SNS</a>
+        <a href="https://whitecoffin.github.io/officialsite/html/about_me.html" class="header-nav-text">ABOUT ME</a>
+      </nav>
+    </div>
+
+    <h1 class="pageTitle">画像結合</h1>
     <h3>結合したいファイルを選択してください</h3>
     <br>
-    <div><h3>もしくはクリップボードからペースト</h3></div>
+    <div><h3>もしくはクリップボードからペースト(Ctrl+V)</h3></div>
     <hr>
     <!--ファイル選択用タグ(非表示/実際に動作する側)-->
     <input type="file" accept="image/*" multiple="multiple" style="display: none;" id="invisibleButton" onchange="previewImage(this);">
