@@ -28,9 +28,15 @@ hr {
 .footer {
   font-family: sans-serif;
   padding: 2rem;
+  padding-left: 8%;
   font-size: 15px;
   color: #000;
   background: #e2e2e2;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
 }
 
 .footer__navi-heading {
